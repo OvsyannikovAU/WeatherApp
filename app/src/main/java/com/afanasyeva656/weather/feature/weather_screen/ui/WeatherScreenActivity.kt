@@ -21,5 +21,8 @@ class WeatherScreenActivity: AppCompatActivity() {
 
     private fun render(state: WeatherDomainModel) {
         findViewById<TextView>(R.id.tvTempeture).let { it.text = state.temperature }
+        findViewById<TextView>(R.id.tvMinTemperature).let{ it.text = state.minTemperature }
+        findViewById<TextView>(R.id.tvMaxTemperature).let{ it.text = state.maxTemperature }
+        findViewById<TextView>(R.id.tvHumidity).let{ it.text = state.humidity }
     }
 }
